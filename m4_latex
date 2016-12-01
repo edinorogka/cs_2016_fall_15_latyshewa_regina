@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{book}
+\documentclass[a4paper, 11pt]{book}
 \usepackage{comment} 
 \usepackage{fullpage}
 \usepackage[utf8x]{inputenc}
@@ -85,14 +85,12 @@ differential equation gives the following period [13, 33]:
 Our educated guess of 1/18 is very close to the true coefficient of 1/16!
 
 \noindent
-\large\textbf{3.6 Summary and further problems}
-
+\section[toc]{Summary and further problems}
 Lumping turns calculus on its head. Whereas calculus analyzes a changing
 process by dividing it into ever finer intervals, lumping simplifies a
 changing process by combining it into one unchanging process. It turns
 curves into straight lines, difficult integrals into multiplication, and mildly
 nonlinear differential equations into linear differential equations.
-
 \normalsize \textit{... the crooked shall be made straight, and the rough places plain. (Isaiah 40:4)}
 
 \noindent
