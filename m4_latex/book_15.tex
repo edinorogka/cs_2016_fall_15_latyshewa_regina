@@ -116,18 +116,35 @@ zero amplitude? Compare your results with the results of Problem 3.33.
 
 For small but nonzero $\theta_{0}$, find an approximate expression for the dimensionless
 period $h(\theta_{0})$ and use it to check your previous conclusions.
+
 \large\textbf{Problem 3.38 Gaussian 1-sigma tail} 
+
 The Gaussian probability density function with zero mean and unit variance is
 \begin{equation}p(x)=\frac{e^{-x^2/2}}{\sqrt{2\pi}}.\end{equation}
 The area of its tail is an important quantity in statistics, but it has no closed form.
 In this problem you estimate the area of the 1-sigma tail
+\begin{equation}\int_{1}^\infty\ \frac{e^{-x^2/2}}{\sqrt{2\pi}} dx\end{equation}
+a. Sketch the above Gaussian and shade the 1-sigma tail.
+
+b. Use the 1/e lumping heuristic (Section 3.2.1) to estimate the area.
+
+c. Use the FWHM heuristic to estimate the area.
+
+d. Compare the two lumping estimates with the result of numerical integration:
+
+\normalsize{where erf(z) is the error function.}
+
 \begin{equation}\int_{1}^\infty\ \frac{e^{-x^2/2}}{\sqrt{2\pi}}dx=\frac{1-erf(1/\sqrt{2})}{2}\approx 1.59,\end{equation}
 where erf(z) is the error function.
 
-\large\textbf{Problem 3.37 Hypothetical pendulum equation} 
+\large\textbf{Problem 3.39 Distant Gaussian tails} 
+
 For the canonical probability Gaussian, estimate the area of its n-sigma tail (for
 large n). In other words, estimate
 \begin{equation}\int_{n}^\infty\ \frac{e^{-x^2/2}}{\sqrt{2\pi}} dx\end{equation}
 \end{minipage}
 }
+
+\newpage
+\
 \end{document}
