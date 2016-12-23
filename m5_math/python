@@ -35,9 +35,10 @@ def pow2(N):
     return res
 
 #задание 3:
-'''здесь тоже можно вызывать для списка src(объявлен вверху)'''
-def sred(list):
-    return mean(list)
+
+def mid(list0):
+    a = len(list0)
+return reduce(lambda x, y: x + y, list0) / float(a)
 
 #задание 4: у меня первый член =0, второй =1
 def fib(N):
