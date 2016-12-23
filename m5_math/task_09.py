@@ -72,10 +72,8 @@ i+=1
 list[imin],list[imax]=list[imax],list[imin]
 return list
 #задание 7
-'''
-Можно вызывать для списка xy, а можно задавать другой.
-d=sqrt((x1-x2)^2+(y1-y2)^2)
-'''
-koord=[1,3,5,6]
-def metr(xy):
-return ((xy[0]-xy[2])**2+(xy[1]-xy[3])**2)**0.5
+
+def ro(x, y, z, i):
+import math
+l = math.sqrt((y - x) ** 2 + (i - z) ** 2)
+return l
