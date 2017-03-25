@@ -4,18 +4,21 @@
 int main()
 {
     int i=0;
-    char a[1000];
-    int max=a[0];
-   gets(a);
-    for(i=0;a[i]!='\0';++i){
+    char c[1000];
+    int max=c[0];
+    scanf("%s", c);
+    for(i=0;c[i]!='\0';++i){
 
-        if(a[i+1]>max){
-            max=a[i+1];
+        if(c[i+1]>max){
+            max=c[i+1];
 
         }
 
-    
+        else{
+            max=max;
+        }
+    }
 
-    printf("%a\n", max);
+    printf("%c\n", max);
 
 }
