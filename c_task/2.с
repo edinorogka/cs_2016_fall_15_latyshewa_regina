@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+int day=16;
+
+int month=8;
+
+printf("Day: %i, month: %i\n", day, month);
+
+int c=day;
+
+int d=month;
+
+printf("New Day: %i, month: %i\n", day=d, month=c);
+
+
+return 0;
+
+}
