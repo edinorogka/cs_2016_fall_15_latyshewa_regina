@@ -5,11 +5,11 @@ int main(void)
 {
 float a,b,c,d,e,f;
 
-printf("Vvedite pervoe chislo v formate a+bi\n ");
+printf("pervoe chislo v formate a+bi\n ");
 
 scanf("%f+%fi", &a, &b);
 
-printf("Vvedite vtoroe chislo v formate a+bi\n ");
+printf("vtoroe chislo v formate a+bi\n ");
 
 scanf("%f+%fi", &c, &d);
 
