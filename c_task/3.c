@@ -19,7 +19,7 @@ f = (a*a*d+c*c*b+b*d*d+b*b*d)/((a+c)*(a+c)+(b+d)*(b+d));
 
 printf("Polycheno chislo\n ");
 
-printf("%.2f+%.2fi", m, z);
+printf("%.2f+%.2fi",e, f);
 
 
 return 0;
