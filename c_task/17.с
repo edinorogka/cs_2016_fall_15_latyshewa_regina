@@ -1,35 +1,33 @@
-#include <stdio.h> 
-#include <stdlib.h> 
+#include <stdio.h>
+#include <stdlib.h>
 
-int r(int n) 
-{ 
-int i; 
-int a[100],x,b; 
-for(i=0;i<n;i++) 
-{ 
-scanf("%d",&a[i]); 
-} 
-x=a[0]; 
-b=a[0]; 
-for( i=0;i<n;i++) 
-{ 
-if(a[i]<x) 
-{ 
-x=a[i]; 
-} 
-if(a[i]>b) 
-{ 
-b=a[i]; 
-} 
+double f(double *x, int n)
+{
+    int i;
 
-} 
-return b-x; 
-} 
+    double min=x[1];
+    double max=x[1];
+    for (i=0;i<n;i++){
+        if (x[i]>max) {max=x[i];}
+    if (x[i]<min) {min=x[i];}
+    }
+      return max-min;}
+int main()
 
-int main() 
-{ 
-int N ; 
-scanf("%d",&N); 
-printf("%d",r(N)); 
-return 0; 
+{
+
+     int i,n;
+     printf("Kolichestvo elementov\n");
+    scanf("%i", &n);
+    double * x = (double *)malloc(n*8);
+	printf("Vvedite massiv cherez Enter: ");
+	for (i = 0; i <n; i++)
+		scanf("%lf", &x[i]);
+
+	printf("raznoct: %lf\n", f(x,n));
+
+
+
+
+    return 0;
 }
