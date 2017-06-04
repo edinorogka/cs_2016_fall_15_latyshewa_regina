@@ -1,30 +1,30 @@
 #include <stdio.h>
 #include <string.h>
-char reverse( char *a)
+char reverse( char *x)
 {
-int j=0,i,t;
-char x[1000];
-z=strlen(a);
-for(i=t-1;i>=0;--i)
+int j=0,i,z;
+char s[1000];
+z=strlen(x);
+for(i=z-1;i>=0;--i)
 {
-x[j]=a[i];
+s[j]=x[i];
 j++;
 }
-for(i=0;a[i]!='\0';++i)
+for(i=0;x[i]!='\0';++i)
 {
-a[i]=x[i];
+x[i]=s[i];
 }
-return *a;
+return *x;
 }
 int main()
 {
 int i;
-char y[1000];
-gets(y);
-reverse(y);
-for( i=0;y[i]!='\0';++i)
+char st[1000];
+gets(st);
+reverse(st);
+for( i=0;st[i]!='\0';++i)
 {
-printf("%c",y[i]);
+printf("%c",st[i]);
 } printf("\n");
 return 0;
 }
