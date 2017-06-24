@@ -9,18 +9,14 @@ float func(float x)
 {
 	return x*x*x;
 }
-
-int main()
-{
-	setlocale(LC_CTYPE, "Russian");
-	float h = 0.0, n = 0.0, x = 0.0, p = 0.0, a = 0.0, b = 0.0, p1 = 0.0, p2 = 0.0, result = 0.0, i = 0.0, k = 1.0, end = 0.0;
-
-	printf("Введите нижнюю границу:");
-	scanf("%f", &a);
-	printf("Введите верхнюю границу:");
-	scanf("%f", &b);
-	printf("Введите точность (min=1, max=100000):");
-	scanf("%f", &n);
+void func1(float k, float result, float a, float b, float n){
+	float h;
+	float x;
+	float p;
+	float p1;
+	float p2;
+	float i;
+	float end;
 	i = (b - a) / (2 * n);
 	h = (b - a) / (2 * n);
 	p = (h / 3)*(func(a) + func(b));
@@ -32,8 +28,13 @@ int main()
 		result = result + p1 + p2;
 	}
 	end = p + result;
+}
+int main()
+{
+	setlocale(LC_CTYPE, "Russian");
+	float h = 1.0, n = 8.0, x = 7.0, p = 0.0, a = 1.0, b =9.0, p1 = 0.0, p2 = 4.0, result = 0.0, i = 0.0, k = 1.0, end = 6.0;
+	func1(result, k, a, b, n);
 	printf("Ответ:=%f\n", end);
 
 	return 0;
 }
-
